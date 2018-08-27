@@ -1,0 +1,30 @@
+<div style="max-width: {{ config.maxWidth }};">
+	{% if stations %}
+		<table class="small light">
+			<tbody>
+				{% for station in stations %}
+					{% if not station.isOpen %}
+						<tr class="dimmed">
+							<td>{{ station.name }}</td>
+							<td>{{ station.price.toFixed(2) }} €</td>
+						</tr>
+					{% else %}
+						<tr>
+							<td>{{ station.name }}</td>
+							<td class="bright">{{ station.price.toFixed(2) }} €</td>
+						</tr>
+					{% endif %}
+				{% endfor %}
+			</tbody>
+			<tfoot>
+				<tr>
+					<td colspan="4" class="align-right dimmed">
+						<img class="cc-icon" src="{{ module_path }}/images/o.cc.svg" /><img class="cc-icon" src="{{ module_path }}/images/o.cc-by.svg" /> tankerkoenig.de
+					</td>
+				</tr>
+			</tfoot>
+		</table>
+	{% else %}
+		<div class="{{ config.textClasses }}">{{ loading }}</div>
+	{% endif %}
+</div>
