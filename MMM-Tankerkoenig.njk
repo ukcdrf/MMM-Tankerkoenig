@@ -5,13 +5,13 @@
 				{% for station in stations %}
 					{% if not station.isOpen %}
 						<tr class="dimmed">
-							<td>{{ station.name }}</td>
-							<td>{{ station.price.toFixed(2) }} €</td>
+							<td class="align-left">{{ station.name }}</td>
+							<td class="align-right">{{ station.price.toFixed(2) }} €</td>
 						</tr>
 					{% else %}
 						<tr>
-							<td>{{ station.name }}</td>
-							<td class="bright">{{ station.price.toFixed(2) }} €</td>
+							<td class="align-left">{{ station.name }}</td>
+							<td class="align-right bright">{{ station.price.toFixed(2) }} €</td>
 						</tr>
 					{% endif %}
 				{% endfor %}
