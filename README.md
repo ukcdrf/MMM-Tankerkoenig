@@ -1,6 +1,15 @@
 # MMM-Tankerkoenig
 This is a module for the [MagicMirror²](https://github.com/MichMich/MagicMirror/) which displays a fuel prices from [Tankerkoenig](https://www.tankerkoenig.de/).
 
+Heavliy inspired by [MMM-Fuel](https://github.com/fewieden/MMM-Fuel) but with the following differences:
+
++ Only support tankerkoenig.de
++ Always sort by price
++ No address, map and distance. You should know where your stations are located
++ No table header to save space
++ Dim stations which are closed
++ Always round prices to 2 digits because it is easier for the eye to compare the last digit
+
 [Fuel Price Data](https://creativecommons.tankerkoenig.de/) by [Tankerkönig](https://www.tankerkoenig.de/) are licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 [Creative Commons Icons](http://cc-icons.github.io/) by [Ricardo Barros](https://twitter.com/richardba) are licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Changed colors to match MagicMirror'S dimmed class.
 
