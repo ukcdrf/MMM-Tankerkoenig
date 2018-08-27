@@ -48,5 +48,5 @@ var config = {
 | `api_key`		   | `string`	| `null`		| API Key from https://creativecommons.tankerkoenig.de/
 | `lat`        	   | `number`	| `52.0973` 	| Latitude of your location
 | `lng`        	   | `number`	| `12.8717`		| Longiude of your location
-| `type`           | `string`	| `e10`			| Fuel type must be on of e5, e10 or diesel
+| `type`           | `string`	| `e10`			| Fuel type must be one of `e5`, `e10` or `diesel`
 | `radius`         | `number`	| `25`			| Radius to search, max 25
