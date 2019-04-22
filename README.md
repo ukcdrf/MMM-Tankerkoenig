@@ -51,7 +51,7 @@ var config = {
 ## Configuration options
 | Option           | Type       | Default 		| Description
 |----------------- |----------- |-------------- | ---------------
-| `updateInterval` | `number`	| `600`			| Update interval in seconds. Not less then 300 (5min) according to Terms
+| `updateInterval` | `number`	| `900000`		| Update interval in seconds. Not less then 300 (5min) according to Terms
 | `maxWidth`       | `string`   | `200px`       | Max width of the module
 | `url`        	   | `string`	| `https://creativecommons.tankerkoenig.de/json/list.php` | Address to fetch prices from.
 | `api_key`		   | `string`	| `null`		| API Key from https://creativecommons.tankerkoenig.de/
